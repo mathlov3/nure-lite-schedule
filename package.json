@@ -1,0 +1,33 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "The application that adds new functionality to nure API schedule.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathlov3/nure-lite-schedule.git"
+  },
+  "keywords": [
+    "nure",
+    "schedule"
+  ],
+  "author": "YevhenSlyva, AnnaZimina, VladlenParechyn, MaksymAntoniuk, DenysDvortsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathlov3/nure-lite-schedule/issues"
+  },
+  "homepage": "https://github.com/mathlov3/nure-lite-schedule#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "~4.0.1",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.9.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
+  }
+}
