@@ -8,8 +8,9 @@ const CONST = {
     month: 3
 };
 
-$('#faculties').click((event) => {
-    if (this.children().length == 0) {
+$('#faculty-selector').click((event) => {
+    var nextEl = $(this).next();
+    if (nextEl.children().length == 0) {
         $.get('/faculties').then((data) => {
             var faculties = JSON.parse(data);
             faculties.forEach(faculty => {
