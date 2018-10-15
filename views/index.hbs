@@ -1,3 +1,51 @@
+<nav class="breadcrumb breadcrumb-groups">
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="faculty-selector" type="button" class="btn btn-secondary dropdown-toggle faculty-selector breadcrumb-selector" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Факультет
+      </button>
+      <div class="dropdown-menu" aria-labelledby="faculty-selector">
+        <a class="dropdown-item faculty-item" href="#">Dropdown link</a>
+        <a class="dropdown-item faculty-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group" hidden="true">
+      <button id="course-selector" type="button" class="btn btn-secondary dropdown-toggle course-selector breadcrumb-selector" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Курс
+      </button>
+      <div class="dropdown-menu" aria-labelledby="course-selector">
+        <a class="dropdown-item course-item" href="#">Dropdown link</a>
+        <a class="dropdown-item course-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group" hidden="true">
+      <button id="speciality-selector" type="button" class="btn btn-secondary dropdown-toggle breadcrumb-selector speciality-selector" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Специальность
+      </button>
+      <div class="dropdown-menu" aria-labelledby="speciality-selector">
+        <a class="dropdown-item speciality-item" href="#">Dropdown link</a>
+        <a class="dropdown-item speciality-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group" hidden="true">
+      <button id="group-selector" type="button" class="btn btn-secondary dropdown-toggle group-selector breadcrumb-selector" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Группа
+      </button>
+      <div class="dropdown-menu" aria-labelledby="group-selector">
+        <a class="dropdown-item group-item" href="#">Dropdown link</a>
+        <a class="dropdown-item group-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 <input class="from" type="date" name="fromDate">

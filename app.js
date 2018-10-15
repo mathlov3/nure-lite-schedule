@@ -7,9 +7,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var scheduleRouter = require('./routes/scheduler');
+<<<<<<< HEAD
 var departmentsRouter = require('./routes/departments');
 var facultiesRouter = require('./routes/faculties');
 var groupsRouter = require('./routes/groups');
+=======
+var sassMiddleware = require('node-sass-middleware');
+>>>>>>> 9fc7bf5b58311a6fa603b6d7d0719213d1a88d89
 
 var app = express();
 
@@ -21,6 +25,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(sassMiddleware({
+  /* Options */
+  src:  path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  debug: true,
+  outputStyle: 'compressed'  
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

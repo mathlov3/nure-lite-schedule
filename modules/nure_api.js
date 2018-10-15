@@ -52,3 +52,15 @@ exports.getSchedule = async function (groupId, fromDate, toDate) {
 
 	return json.events;
 }
+
+exports.getFaculties = () => {
+	return [{id: 1, name: 'Faculty 1'}, {id: 2, name: 'Faculty 2'}];
+};
+
+exports.getDepartments = (facultyId) => {
+	return [{id: 1, name: 'Department 1'}, {id: 2, name: 'Department 2'}];
+};
+
+exports.getGroups = (departmentId, course) => {
+	return [{id: 1, name: 'Group 1'}, {id: 2, name: 'Group 2'}];
+};
